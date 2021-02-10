@@ -7,3 +7,5 @@ stage('clone') {
   stage('Unit Testing') {
     sh 'mvn test'
 }
+
+}
