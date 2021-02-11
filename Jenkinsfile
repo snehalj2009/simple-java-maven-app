@@ -4,7 +4,7 @@ checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleC
 }
 
 stage('unit testing') {
- echo 'unit testing' 
+ sh 'mvn test' 
 }
 
 stage('code analysis') {
